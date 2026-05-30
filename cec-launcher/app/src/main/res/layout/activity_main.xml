@@ -81,12 +81,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <!-- Guideline at 28% from top so drawer occupies ~72% of screen height -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/drawerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
     <!-- App Drawer container -->
     <FrameLayout
         android:id="@+id/drawerContainer"
         android:layout_width="match_parent"
-        android:layout_height="72%"
+        android:layout_height="0dp"
         android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/drawerGuideline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
