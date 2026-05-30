@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_deep_space"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="72dp"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="48dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_arrow_back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:tint="@color/text_luminous"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Sacred Settings"
+                android:textColor="@color/text_luminous"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light" />
+
+            <View android:layout_width="40dp" android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <!-- Chakra Theme Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chakra Theme"
+            android:textColor="@color/accent_violet"
+            android:textSize="13sp"
+            android:letterSpacing="0.15"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Color Preview -->
+        <View
+            android:id="@+id/accentPreview"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/preview_pill" />
+
+        <!-- RadioGroup for Chakras -->
+        <RadioGroup
+            android:id="@+id/chakraGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/radioRoot"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_root"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioSacral"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_sacral"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioSolar"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_solar"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioHeart"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_heart"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioThroat"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_throat"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioThirdEye"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_thirdeye"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+            <RadioButton android:id="@+id/radioCrown"
+                android:layout_width="match_parent" android:layout_height="48dp"
+                android:textColor="@color/text_luminous" android:buttonTint="@color/chakra_crown"
+                android:textSize="15sp" android:paddingStart="12dp" />
+
+        </RadioGroup>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#22FFFFFF"
+            android:layout_marginVertical="32dp" />
+
+        <!-- About Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="@color/accent_violet"
+            android:textSize="13sp"
+            android:letterSpacing="0.15"
+            android:textAllCaps="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_luminous"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvAboutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_luminous"
+            android:textSize="14sp"
+            android:alpha="0.75"
+            android:lineSpacingExtra="6dp" />
+
+    </LinearLayout>
+</ScrollView>

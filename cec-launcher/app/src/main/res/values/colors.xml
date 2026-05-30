@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_deep_space">#FF050714</color>
+    <color name="bg_midnight">#FF0A0D1F</color>
+    <color name="text_luminous">#FFFAFAFA</color>
+    <color name="accent_gold">#FFFFD700</color>
+    <color name="accent_violet">#FFB388FF</color>
+
+    <!-- Chakra colors -->
+    <color name="chakra_root">#FFB71C1C</color>
+    <color name="chakra_sacral">#FFE65100</color>
+    <color name="chakra_solar">#FFF9A825</color>
+    <color name="chakra_heart">#FF1B5E20</color>
+    <color name="chakra_throat">#FF0277BD</color>
+    <color name="chakra_thirdeye">#FF283593</color>
+    <color name="chakra_crown">#FF4A148C</color>
+
+    <!-- Material required -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
